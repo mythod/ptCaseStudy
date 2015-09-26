@@ -1,7 +1,19 @@
 
-header  {background-color: #000033; color: #FFFFFF;}
-h1 {background-color: #000033; color: #FFFFFF;}
-body {color: #666666}
-nav {background-color: #90C7E3;}
-h2 {color: #3399CC;}
- b .resort {color: #5C7FA3;}
+header {background-color: #000033; color: #F5F5F5; text-align: center}
+h1 {background-color: #000033; color: #FFFFFF;font-family: Georgia,Times,"Times New Roman",serif ; padding: 10px 10px ; background-image: url(images/sunset.jpg); background-position: right; background-repeat: no-repeat; margin-top: 0}
+body {color: #666666 ; 
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+    line-height: 20px; background-image: url(images/ptrbackground.jpg); padding-top: 1px; padding: 20px}
+	
+nav {background-color: #90C7E3; text-align: center ; font-weight: bold;padding-left: 20px ; padding: 5px}
+nav a {text-decoration: none}
+h2 {color: #3399CC; text-shadow: 1px}
+#resort {color: #5C7FA3; font-weight: bold}
+ul {list-style-image: url(images/marker.gif)}
+#contact {font-size: 90%}
+footer {font-size: 75% ; text-align: center ; font-family: Georgia,Times,"Times New Roman",serif ; font-style: italic; padding: 20px}
+#wrapper {background-color: #F5F5F5 ; width: 80%}
