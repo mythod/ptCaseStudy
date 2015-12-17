@@ -1,4 +1,8 @@
-    header {
+html {
+    position: relative;
+    min-height: 100%;
+}
+header {
     background-color: #000033;
     color: #F5F5F5;
     text-align: center;
@@ -14,10 +18,8 @@ h1 {
     background-repeat: no-repeat;
     margin-top: 0;
     margin-bottom: 0;
-    position: static;
-    height: 60px;
     text-align: center;
-    padding-top: 15px;
+    padding: 10px;
 }
 
 
@@ -28,8 +30,8 @@ h1 {
     background-image: url(images/coasthero.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    height: 300px;
     background-size: 100% 100%;
+    height: 300px;
     margin-top: 0;
     margin-left: 190px;
 }
@@ -61,11 +63,11 @@ main {
     padding-left: 20px;
     display: block;
     margin-left: 190px;
-    background-color: floralwhite;
+    background-color: #FFFFFF;
 }
 
 h2 {
-    color: #3399CC;
+    color: #90C7E3;
     text-shadow: 1px 1px #666666;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: bold;
@@ -73,8 +75,7 @@ h2 {
 }
 
 h3 {
-    color: #3399CC;
-    text-shadow: 1px 1px #666666;
+    color: #5C7FA3;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: bold;
 }
@@ -92,12 +93,15 @@ body {
     padding: 20px;
     margin: 0;
     background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+    
 }
 
 
 
 nav {
     font-weight: bold;
+    font-size: large;
     padding: 15px;
     margin-top: auto;
     width: 160px;
@@ -111,23 +115,29 @@ nav {
 nav a {
     text-decoration: none;
     text-align: left;
+    transition: background-color .5s linear;
 }
 
 
 
 a:link {
-    color: darkblue;
+    color: #000033;
 }
 
 a:visited {
-    color: purple;
+    color: #344873;
 }
 
 a:hover {
-    color: antiquewhite;
+    color: #FFFFFF;
+    
     
 }
 
+video, embed {
+    float: right;
+    padding-left: 20px;
+ }
 nav ul {
     list-style-image: none;
     margin: 0;
@@ -209,17 +219,69 @@ nav li {
 
 
 
-resort {
+#resort {
     color: #5C7FA3;
     font-weight: bold;
 }
 
+table {
+    margin: auto;
+    border: 1px solid #3399CC;
+    border-spacing: 0px;
+    width: 600px;
+}
+
+
+table, tr, th {
+    border: 1px solid #3399CC;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+#data{
+    text-align: left;
+}
+
+tr:nth-of-type(odd){
+    background-color: #90C7E3;
+}
+
+.text {}
 
 
 ul {
     list-style-image: url(images/marker.gif);
 }
 
+label {
+    float:left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 5px;
+    
+}
+
+select {
+    display:block;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    display:block;
+    margin-bottom: 20px;
+}
+
+input {
+    display:block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 125px;
+}
 
 
 contact {
@@ -235,8 +297,8 @@ footer {
     font-style: italic;
     padding: 20px;
     float: none;
-    margin-left: 0;
-    background-color: floralwhite;
+    margin-left: 190px;
+    background-color: #FFFFFF;
     clear: both;
 }
 
@@ -245,9 +307,8 @@ footer {
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     background-color: #F5F5F5;
-    width: 960px;
     box-shadow: 5px 5px 5px #666666;
     background-color: #90C7E3;
 }
@@ -255,22 +316,31 @@ footer {
 @media only screen and (max-width: 768px) {
 
     nav {float:none; width: auto; padding: 0.5em; text-align: center;}
-    body {margin:0; background-color: antiquewhite; background-image: none;}
-    wrapper {min-width: 0; width: auto; box-shadow: none;}
+    body {margin:0; background-color: #FFFFFF; background-image: none;}
+    #wrapper {min-width: 0; width: auto; box-shadow: none;}
     h1 {margin-top: 0;}
-    nav li {display: inline; padding-top: 0; padding-bottom: 0; padding-left: 0.75em; padding-right: 0.75em;}
+    nav {float:none;}
+    nav li {display: inline; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.75em; padding-right: 0.75em;}
     main {margin-left: 0;}
-    #homehero {margin-left: 0;}
-    #yurtshero {margin-left: 0;}
-    #activitieshero {margin-left: 0;}
+    #homehero {margin-left: 0; height: 200px;}
+    #yurtshero {margin-left: 0; height: 200px;}
+    #activitieshero {margin-left: 0; height: 200px;}
     
     
 }
 
 @media only screen and (max-width: 480px) {
     
-    nav li {display: block;}
-    
-
+    header {padding-top: 1em;}
+    main {padding: 0.1em 0.1em 1em 1em; font-size:90%;}
+    nav {padding:0;}
+    nav li {display: block; margin: 0; border-bottom: 2px solid #330000;}
+    form {float:none ; text-align: center;}
+    h1 {font-size: 1.5em;}
+    #homehero {background-image: url(images/coast.jpg);}
+    #yurtsher0 {background-image: url(images/yurt.jpg);}
+    #activitieshero {background-image: url(images/trail.jpg);}
+    body {font-size: 90%}
+    video {display: none;}
 }
 
